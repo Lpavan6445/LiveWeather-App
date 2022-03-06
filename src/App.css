@@ -1,0 +1,247 @@
+.App {
+  /* background-color: #f5f5f5; */
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-repeat: n-repeat;
+  height: 120vh;
+}
+#head{
+    border-bottom: 3px solid white;
+    padding: 7px;
+    color: white
+}
+      /* <-----------Search---------------> */
+  .btncontainer{
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+  }
+  .search {
+      position: relative;
+      box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+     
+  }
+  .search input {
+      height: 40px;
+      text-indent: 10px;
+      /* border: 2px solid white; */
+      border-radius: 50px;
+      background-color: rgb(255 255 255 / 70%);
+  }
+  .search button {
+      position: absolute;
+      top: 2px;
+      right: 3px;
+      height: 36px;
+      width: 110px;
+      background: blue;
+      border-radius: 50px;
+  }
+/* <----------------------------> */
+.main {
+    display: grid;
+    grid-template-columns: 65% 34%;
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    margin: 20px;
+}
+
+/* <-------------------VityName(top right)----------------------> */
+
+#cityName >p{
+  text-align: right;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  margin-right: 17px;
+}
+#ciT{
+   font-size: 50px;
+   margin: 0px;
+   text-align: right;
+   
+ }
+ #Todaydate{
+   font-size: 30px;
+ }
+  
+/* <-------------------------------------------> */
+#middleLeft{
+ /* display: inline-block; */
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgb(255 255 255 / 70%);
+  /* height: 400px; */ 
+     grid-area: "mdleft";
+     width: 97%;
+     /* height: 230px; */
+     padding-top: 20px;
+     padding-right: 10px;
+} 
+#todayIcon{
+  display: inline-block;
+  
+  vertical-align: top;
+  margin-left: 18px;
+}
+#todayTemp{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 90px;
+  font-weight: bold;
+  /* vertical-align: center; */
+  color:rgb(0, 0, 0);
+}
+#midddleRight{
+  grid-area: "mdRight";
+  color:black;
+  padding: 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: rgb(255 255 255 / 70%);
+}
+#sr >img{
+ display: inline-block;
+ vertical-align: top;
+}
+#sr>p{
+display: inline-block;
+margin-left: 17px;
+/* margin-top: 5px; */
+/* margin-left: 5px; */
+font-size: 25px;
+}
+#sr2 >img{
+ display: inline-block;
+ vertical-align: top;
+}
+#sr2>p{
+  display: inline-block;
+  margin-left: 17px;
+  /* margin-top: 5px; */
+  /* margin-left: 5px; */
+  font-size: 25px;
+}
+#winddiv>img {
+ display: inline-block;
+ vertical-align: top;
+}
+#winddiv>p{
+  display: inline-block;
+  display: inline-block;
+  margin-left: 17px;
+  font-size: 25px;
+}
+#minMaxT>p{
+  font-size: 20px;
+  margin:0px;
+  font-family: sans-serif;
+}
+/* <----------------------fORECAST 7-DAYS---------------------------> */
+   #wetherContainer {
+      border-radius: 23px;
+     /* background: rgba(255, 255, 255, 0.95); */
+     /* backdrop-filter: blur(10px); */
+      box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.192);
+      display: grid;
+      /* grid-template-columns: 0.5fr 1fr;
+      grid-template-rows: 0.2fr 1fr 0.5fr; */
+      gap: 15px 0px;
+      /* grid-auto-flow: row; */
+      grid-template-areas:
+      "search cityName "
+      "mdleft mdRight"
+      "forecast forecast";
+      /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+      padding: 20px;
+  }
+ 
+  .btncontainer{
+       grid-area:"search"
+  }
+  #cityName{   
+        /* padding-top:20px; */
+        grid-area: "cityName";
+  }
+  #Todaydate{
+    font-size: 25px;
+    margin: 0px;
+  }
+  #cloud{
+    font-size: 25px;
+  }
+
+  .forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-area: forecast;
+    margin: 10px;
+    
+  }
+  .forecast>div{
+      height: 155px;
+      border-radius: 20px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      background-color: rgb(255 255 255 / 70%);
+      transition: 0.4s all ease-in-out;
+  }
+  .forecast>div:hover{
+    /* transition: 0.4s all ease-in-out; */
+    transform: scale(1.1);
+  }
+  .forecast>div>.forecastDay{
+       margin: 0px;
+       text-align: center;
+       font-size: 25px;
+       font-weight: bold;
+       color:rgb(0, 0, 0);
+       margin-top: 7px;
+  }
+  .forecast>div>img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+     margin-right: auto;
+
+  }
+  .forecast>div >.forecastTemp{
+     font-size: 25px;
+     font-weight: bold;
+     color: grey;
+     /* color:black; */
+     text-align: center;
+  }
+  h2{
+    margin-left: 20px;
+  }
+
+
+  /*-------Google Maps Component-------------- */
+.map{
+  margin-top:40px
+}
+.map>div{
+  max-width:100%;
+  list-style:none;
+   transition: none;
+   overflow:hidden;
+   width:500px;
+   height:500px; 
+   border-radius: 20px;
+}
+#canvasfor-googlemap{
+  height:100%; width:100%;max-width:100%;
+}
+#maps{
+  height:100%;width:100%;border:0;
+}
+
+
+#midddleRight>div>img{
+  width:40px;
+}
