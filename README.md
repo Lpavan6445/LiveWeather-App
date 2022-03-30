@@ -1,5 +1,5 @@
 # LiveWeather-App
-A beautiful weather app: which shows Current weather and also forecasts next 7 days weather
+A beautiful Live weather app: which shows Current weather and also Forecasts next 7 days weather
 
 ![Live Weather Page](https://github.com/Lpavan6445/photos/blob/main/LiveWeather/liveWeather.png)
 
